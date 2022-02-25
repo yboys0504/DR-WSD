@@ -11,9 +11,6 @@ The long-tailed distribution is extremely common in nature, so the data from the
 
 ---<b>SemCor:</b> <a href="http://lcl.uniroma1.it/wsdeval/training-data">http://lcl.uniroma1.it/wsdeval/training-data</a>
 
----<b>OMSTI:</b> <a href="http://lcl.uniroma1.it/wsdeval/training-data">http://lcl.uniroma1.it/wsdeval/training-data</a>
-
----<b>Multilingual datasets:</b> <a href="https://github.com/SapienzaNLP/mwsd-datasets">https://github.com/SapienzaNLP/mwsd-datasets</a>
 
 
 <b>ckpt:</b> The ckpt folder contains the pre-training code for the model.
