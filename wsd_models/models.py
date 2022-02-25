@@ -126,7 +126,7 @@ class VAE(torch.nn.Module):
         lv1_1 = F.normalize(self.lv1_1(x), p=2, dim=1)
         lv1_2 = F.normalize(self.lv1_2(x), p=2, dim=1)
 
-        lv1 = (1/2) * (torch.bmm(lv1_1.transpose(0,1).unsqueeze(0), lv1_1.unsqueeze(0)) + torch.bmm(lv1_2.transpose(0,1).unsqueeze(0), lv1_2.unsqueeze(0)))
+        lv1 = (1/2) * (torch.bmm(lv1_1.unsqueeze(1).transpose(1,2), lv1_1.unsqueeze(1)) + torch.bmm(lv1_2.unsqueeze(1).transpose(1,2), lv1_2.unsqueeze(1)))
         lv2 = torch.diag_embed(self.lv2(x))
 
         return self.mu1(x), lv1, self.mu2(x), lv2
