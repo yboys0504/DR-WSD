@@ -2,7 +2,7 @@
 The long-tailed distribution is extremely common in nature, so the data from the real world is hardly an ideal balanced distribution and often presents an unbalanced long-tailed phenomenon. Since both words and senses in natural language have long tails in usage frequency, the Word Sense Disambiguation (WSD) task needs to face more serious data imbalance. Although many learning strategies or data augmentation methods have been proposed to deal with the data imbalance, they cannot deal with the shortage of training samples caused by fixed scenarios and single glosses of long-tail senses. Considering that the Disentangled Representation (DR) does not require a deep feature extraction and fusion process, which greatly alleviates the dependence of the representation learning process on the number of training samples, this paper leverages DR to deal with glosses to improve the recognition effect of long-tail senses. We propose a method to obtain the disentangled representation through an independence constraint mechanism between features, and implement a WSD model using this representation. The model is validated on the English all-word WSD dataset and outperforms the baseline models; furthermore, the effectiveness of DR is reconfirmed in few-shot evaluation experiments.
 
 ## Schematic diagram of the model architecture
-<img src="https://github.com/yboys0504/DR-WSD/blob/main/chart.png">
+<img src="https://github.com/yboys0504/DR-WSD/blob/main/dp.png">
 
 
 
